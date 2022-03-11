@@ -78,7 +78,7 @@ A fitness app that allows the user to plan a daily routine, with videos availabl
 
 ## Schema 
 Models
-Property|Type|Description
+Property | Type | Description
 -------------------------
 [This section will be completed in Unit 9]
 ### Models

@@ -77,6 +77,9 @@ A fitness app that allows the user to plan a daily routine, with videos availabl
 ### [BONUS] Interactive Prototype
 
 ## Schema 
+Models
+Property|Type|Description
+-------------------------
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]

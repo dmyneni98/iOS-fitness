@@ -83,6 +83,9 @@ Models
 | Username     | String         | Users Username|
 | Password     | String         | Users Password|
 | Image        | File           | Users defined playlist thumbnail|
+| Search | String | Search to find workout videos |
+| Video Title | String | The user defined title given to a saved video |
+| Video Decsription | String | User defined Description given to a video |
 
 [This section will be completed in Unit 9]
 ### Models

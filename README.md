@@ -79,13 +79,17 @@ A fitness app that allows the user to plan a daily routine, with videos availabl
 ## Schema 
 Models
 | Property     | Type           | Description   |
-| :---         |     :---:      |          ---: |
+| :---         |     :---:      |          :--- |
 | Username     | String         | Users Username|
 | Password     | String         | Users Password|
 | Image        | File           | Users defined playlist thumbnail|
 | Search | String | Search to find workout videos |
 | Video Title | String | The user defined title given to a saved video |
 | Video Decsription | String | User defined Description given to a video |
+| Day | String | Holds the value of the days of the week |
+| User | File | User profile pic |
+| Personal Info | String | Personal information of the user such as age and height |
+| About Me | String | Holds the description of the user |
 
 [This section will be completed in Unit 9]
 ### Models

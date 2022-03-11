@@ -81,6 +81,9 @@ Models
 | Property     | Type           | Description   |
 | :---         |     :---:      |          ---: |
 | Username     | String         | Users Username|
+| Password     | String         | Users Password|
+| Image        | File           | Users defined playlist thumbnail|
+
 [This section will be completed in Unit 9]
 ### Models
 [Add table of models]

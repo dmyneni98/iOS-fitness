@@ -69,8 +69,7 @@ A fitness app that allows the user to plan a daily routine, with videos availabl
 * Select video -> Add to day 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://user-images.githubusercontent.com/98985433/158521938-d6ebe3a5-ef27-43f0-83f6-17e9db309787.jpg" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 
@@ -95,6 +94,20 @@ Models
 ### Models
 [Add table of models]
 ### Networking
+#### List of network requests by screen
+   - Home Screen
+      - (Read/GET) Query all weekly view posts 
+      - (Create) Create new post for weekly view
+      - (Delete) Delete post for weekly view
+   - Scrolling Feed Screen
+      - (Create/POST) Create a new like on a post
+      - (Delete) Delete existing like
+      - (Create/POST) Create a new comment on a post
+      - (Delete) Delete existing comment
+   - Profile Screen
+      - (Update/PUT) Update user profile image
+      - (Update/Info) Update user profile info
+
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]

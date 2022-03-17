@@ -76,7 +76,7 @@ A fitness app that allows the user to plan a daily routine, with videos availabl
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-Models
+### Models
 | Property     | Type           | Description   |
 | :---         |     :---:      |          :--- |
 | Username     | String         | Users Username|
@@ -91,8 +91,6 @@ Models
 | About Me | String | Holds the description of the user |
 
 [This section will be completed in Unit 9]
-### Models
-[Add table of models]
 ### Networking
 #### List of network requests by screen
    - Home Screen

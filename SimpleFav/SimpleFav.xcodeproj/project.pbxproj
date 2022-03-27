@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042AF10A27F0C6F200784D29 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042AF10927F0C6F200784D29 /* Launch Screen.storyboard */; };
+		042AF10C27F0C88200784D29 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AF10B27F0C88200784D29 /* LoginViewController.swift */; };
+		66C033CB0FD67CFBF6C8CF20 /* Pods_SimpleFav.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15501492300BAC3B69B7646 /* Pods_SimpleFav.framework */; };
+		67C4CD9DDC01BB456B62BCE3 /* Pods_SimpleFav_SimpleFavUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDD6C608441E00BA331D8FD9 /* Pods_SimpleFav_SimpleFavUITests.framework */; };
 		83709CFD27F0293D009DF51F /* PlaylistCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83709CFC27F0293D009DF51F /* PlaylistCellTableViewCell.swift */; };
 		83850A9027EFF9B100104D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83850A8F27EFF9B100104D92 /* AppDelegate.swift */; };
 		83850A9227EFF9B100104D92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83850A9127EFF9B100104D92 /* SceneDelegate.swift */; };
 		83850A9427EFF9B100104D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83850A9327EFF9B100104D92 /* ViewController.swift */; };
 		83850A9727EFF9B100104D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83850A9527EFF9B100104D92 /* Main.storyboard */; };
 		83850A9927EFF9B100104D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83850A9827EFF9B100104D92 /* Assets.xcassets */; };
-		83850A9C27EFF9B100104D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83850A9A27EFF9B100104D92 /* LaunchScreen.storyboard */; };
 		83850AA727EFF9B100104D92 /* SimpleFavTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83850AA627EFF9B100104D92 /* SimpleFavTests.swift */; };
 		83850AB127EFF9B100104D92 /* SimpleFavUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83850AB027EFF9B100104D92 /* SimpleFavUITests.swift */; };
 		83850AB327EFF9B100104D92 /* SimpleFavUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83850AB227EFF9B100104D92 /* SimpleFavUITestsLaunchTests.swift */; };
+		8834711C00641D166C09DA5D /* Pods_SimpleFavTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64090D77EB2093D57730DC3B /* Pods_SimpleFavTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042AF10927F0C6F200784D29 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		042AF10B27F0C88200784D29 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5392C47A3114A7347D613F95 /* Pods-SimpleFav-SimpleFavUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleFav-SimpleFavUITests.release.xcconfig"; path = "Target Support Files/Pods-SimpleFav-SimpleFavUITests/Pods-SimpleFav-SimpleFavUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C10C88E6D27C9E8BC9190F4 /* Pods-SimpleFavTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleFavTests.release.xcconfig"; path = "Target Support Files/Pods-SimpleFavTests/Pods-SimpleFavTests.release.xcconfig"; sourceTree = "<group>"; };
+		64090D77EB2093D57730DC3B /* Pods_SimpleFavTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleFavTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83709CFC27F0293D009DF51F /* PlaylistCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCellTableViewCell.swift; sourceTree = "<group>"; };
 		83850A8C27EFF9B100104D92 /* SimpleFav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleFav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83850A8F27EFF9B100104D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,13 +53,18 @@
 		83850A9327EFF9B100104D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83850A9627EFF9B100104D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83850A9827EFF9B100104D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		83850A9B27EFF9B100104D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83850A9D27EFF9B100104D92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83850AA227EFF9B100104D92 /* SimpleFavTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleFavTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83850AA627EFF9B100104D92 /* SimpleFavTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFavTests.swift; sourceTree = "<group>"; };
 		83850AAC27EFF9B100104D92 /* SimpleFavUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleFavUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83850AB027EFF9B100104D92 /* SimpleFavUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFavUITests.swift; sourceTree = "<group>"; };
 		83850AB227EFF9B100104D92 /* SimpleFavUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFavUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C25AA2362E19666951CA58D /* Pods-SimpleFavTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleFavTests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleFavTests/Pods-SimpleFavTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9EF65278B460E2C4086F9EFC /* Pods-SimpleFav.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleFav.release.xcconfig"; path = "Target Support Files/Pods-SimpleFav/Pods-SimpleFav.release.xcconfig"; sourceTree = "<group>"; };
+		DDD6C608441E00BA331D8FD9 /* Pods_SimpleFav_SimpleFavUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleFav_SimpleFavUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E15501492300BAC3B69B7646 /* Pods_SimpleFav.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleFav.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F77113F7205654A1BFD8BCD4 /* Pods-SimpleFav.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleFav.debug.xcconfig"; path = "Target Support Files/Pods-SimpleFav/Pods-SimpleFav.debug.xcconfig"; sourceTree = "<group>"; };
+		FE3540802F920C6AF4493EF5 /* Pods-SimpleFav-SimpleFavUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleFav-SimpleFavUITests.debug.xcconfig"; path = "Target Support Files/Pods-SimpleFav-SimpleFavUITests/Pods-SimpleFav-SimpleFavUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66C033CB0FD67CFBF6C8CF20 /* Pods_SimpleFav.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8834711C00641D166C09DA5D /* Pods_SimpleFavTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +88,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67C4CD9DDC01BB456B62BCE3 /* Pods_SimpleFav_SimpleFavUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CD4C295B1D931879CE9A9B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E15501492300BAC3B69B7646 /* Pods_SimpleFav.framework */,
+				DDD6C608441E00BA331D8FD9 /* Pods_SimpleFav_SimpleFavUITests.framework */,
+				64090D77EB2093D57730DC3B /* Pods_SimpleFavTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83850A8327EFF9B100104D92 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +112,8 @@
 				83850AA527EFF9B100104D92 /* SimpleFavTests */,
 				83850AAF27EFF9B100104D92 /* SimpleFavUITests */,
 				83850A8D27EFF9B100104D92 /* Products */,
+				9C1EAC3BF16583B80740B23F /* Pods */,
+				5CD4C295B1D931879CE9A9B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,10 +134,11 @@
 				83850A9127EFF9B100104D92 /* SceneDelegate.swift */,
 				83850A9327EFF9B100104D92 /* ViewController.swift */,
 				83850A9527EFF9B100104D92 /* Main.storyboard */,
+				042AF10927F0C6F200784D29 /* Launch Screen.storyboard */,
 				83850A9827EFF9B100104D92 /* Assets.xcassets */,
-				83850A9A27EFF9B100104D92 /* LaunchScreen.storyboard */,
 				83850A9D27EFF9B100104D92 /* Info.plist */,
 				83709CFC27F0293D009DF51F /* PlaylistCellTableViewCell.swift */,
+				042AF10B27F0C88200784D29 /* LoginViewController.swift */,
 			);
 			path = SimpleFav;
 			sourceTree = "<group>";
@@ -130,6 +160,19 @@
 			path = SimpleFavUITests;
 			sourceTree = "<group>";
 		};
+		9C1EAC3BF16583B80740B23F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F77113F7205654A1BFD8BCD4 /* Pods-SimpleFav.debug.xcconfig */,
+				9EF65278B460E2C4086F9EFC /* Pods-SimpleFav.release.xcconfig */,
+				FE3540802F920C6AF4493EF5 /* Pods-SimpleFav-SimpleFavUITests.debug.xcconfig */,
+				5392C47A3114A7347D613F95 /* Pods-SimpleFav-SimpleFavUITests.release.xcconfig */,
+				8C25AA2362E19666951CA58D /* Pods-SimpleFavTests.debug.xcconfig */,
+				5C10C88E6D27C9E8BC9190F4 /* Pods-SimpleFavTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83850AB627EFF9B100104D92 /* Build configuration list for PBXNativeTarget "SimpleFav" */;
 			buildPhases = (
+				DBAECB2AEF059327C5FB6265 /* [CP] Check Pods Manifest.lock */,
 				83850A8827EFF9B100104D92 /* Sources */,
 				83850A8927EFF9B100104D92 /* Frameworks */,
 				83850A8A27EFF9B100104D92 /* Resources */,
+				4F30E75761732EBAD910F41E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,9 +199,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83850AB927EFF9B100104D92 /* Build configuration list for PBXNativeTarget "SimpleFavTests" */;
 			buildPhases = (
+				5A76B6231734F7CB0B328C50 /* [CP] Check Pods Manifest.lock */,
 				83850A9E27EFF9B100104D92 /* Sources */,
 				83850A9F27EFF9B100104D92 /* Frameworks */,
 				83850AA027EFF9B100104D92 /* Resources */,
+				B66E2E7A318602502A873F28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83850ABC27EFF9B100104D92 /* Build configuration list for PBXNativeTarget "SimpleFavUITests" */;
 			buildPhases = (
+				643B3D09C2CF7C43BBB971DB /* [CP] Check Pods Manifest.lock */,
 				83850AA827EFF9B100104D92 /* Sources */,
 				83850AA927EFF9B100104D92 /* Frameworks */,
 				83850AAA27EFF9B100104D92 /* Resources */,
+				20D12E7EB49BE100FD09CACA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,8 +283,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83850A9C27EFF9B100104D92 /* LaunchScreen.storyboard in Resources */,
 				83850A9927EFF9B100104D92 /* Assets.xcassets in Resources */,
+				042AF10A27F0C6F200784D29 /* Launch Screen.storyboard in Resources */,
 				83850A9727EFF9B100104D92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +305,126 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20D12E7EB49BE100FD09CACA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleFav-SimpleFavUITests/Pods-SimpleFav-SimpleFavUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleFav-SimpleFavUITests/Pods-SimpleFav-SimpleFavUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleFav-SimpleFavUITests/Pods-SimpleFav-SimpleFavUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F30E75761732EBAD910F41E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleFav/Pods-SimpleFav-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleFav/Pods-SimpleFav-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleFav/Pods-SimpleFav-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A76B6231734F7CB0B328C50 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleFavTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		643B3D09C2CF7C43BBB971DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleFav-SimpleFavUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B66E2E7A318602502A873F28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleFavTests/Pods-SimpleFavTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleFavTests/Pods-SimpleFavTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleFavTests/Pods-SimpleFavTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBAECB2AEF059327C5FB6265 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleFav-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		83850A8827EFF9B100104D92 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +433,7 @@
 				83850A9427EFF9B100104D92 /* ViewController.swift in Sources */,
 				83850A9027EFF9B100104D92 /* AppDelegate.swift in Sources */,
 				83850A9227EFF9B100104D92 /* SceneDelegate.swift in Sources */,
+				042AF10C27F0C88200784D29 /* LoginViewController.swift in Sources */,
 				83709CFD27F0293D009DF51F /* PlaylistCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,14 +477,6 @@
 				83850A9627EFF9B100104D92 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		83850A9A27EFF9B100104D92 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83850A9B27EFF9B100104D92 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -438,6 +600,7 @@
 		};
 		83850AB727EFF9B100104D92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F77113F7205654A1BFD8BCD4 /* Pods-SimpleFav.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +629,7 @@
 		};
 		83850AB827EFF9B100104D92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EF65278B460E2C4086F9EFC /* Pods-SimpleFav.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -494,6 +658,7 @@
 		};
 		83850ABA27EFF9B100104D92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C25AA2362E19666951CA58D /* Pods-SimpleFavTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +679,7 @@
 		};
 		83850ABB27EFF9B100104D92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C10C88E6D27C9E8BC9190F4 /* Pods-SimpleFavTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +700,7 @@
 		};
 		83850ABD27EFF9B100104D92 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3540802F920C6AF4493EF5 /* Pods-SimpleFav-SimpleFavUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +719,7 @@
 		};
 		83850ABE27EFF9B100104D92 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5392C47A3114A7347D613F95 /* Pods-SimpleFav-SimpleFavUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

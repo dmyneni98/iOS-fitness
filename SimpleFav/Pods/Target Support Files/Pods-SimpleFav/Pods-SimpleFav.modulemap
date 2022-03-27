@@ -1,0 +1,6 @@
+framework module Pods_SimpleFav {
+  umbrella header "Pods-SimpleFav-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -109,3 +109,6 @@ A fitness app that allows the user to plan a daily routine, with videos availabl
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+
+![SimpleFav_Sprint1](https://user-images.githubusercontent.com/30871002/161178944-6661e407-07fa-453e-bcc4-c18bbee3c75c.gif)

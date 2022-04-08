@@ -32,27 +32,26 @@ A fitness app that allows the user to plan a daily routine, with videos availabl
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
-
-* Login to an account they have and log out 
-* A scroll scroll screen 
-* A weekly 
+- [x] Login to an account they have and log out 
+- [x] A feed scroll screen 
+- [ ] A weekly scroll screen
 
 **Optional Nice-to-have Stories**
 
-* Scrolling timeline 
-* Sharing between users 
-* Integration with calendars 
+- [x] Scrolling timeline 
+- [ ] Sharing between users 
+- [ ] Integration with calendars 
 
 ### 2. Screen Archetypes
 
 * Login screen 
-   * Ability to login 
-   * Ability to logout 
-* Timeline view 
-   * Scroll through the videos 
-   * Get videos from other sources 
+Ability to login 
+Ability to logout 
+Timeline view 
+Scroll through the videos 
+Get videos from other sources 
 * Weekly view 
-   * Saved a video to a specific day  
+Saved a video to a specific day  
 
 ### 3. Navigation
 
@@ -111,5 +110,11 @@ A fitness app that allows the user to plan a daily routine, with videos availabl
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
 
-![SimpleFav_Sprint1](https://user-images.githubusercontent.com/30871002/161178944-6661e407-07fa-453e-bcc4-c18bbee3c75c.gif)
+# SimpleFav_Sprint1
+<img src="https://user-images.githubusercontent.com/30871002/161178944-6661e407-07fa-453e-bcc4-c18bbee3c75c.gif" width="300" height="650"/>
+
+# SimpleFav_Sprint2
+![ezgif com-gif-maker-11](https://user-images.githubusercontent.com/98985433/162364022-9289ab54-663c-4189-a14a-59ac7e6ca344.gif)
+
+
 

@@ -10,6 +10,7 @@
 		042AF0CC27E3D66700784D29 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042AF0CB27E3D66700784D29 /* CommentCell.swift */; };
 		0471E4A727FFA85800E8D2FD /* WeeklyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E4A627FFA85800E8D2FD /* WeeklyTableViewController.swift */; };
 		0471E4AB27FFAF9000E8D2FD /* LaunchUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E4AA27FFAF9000E8D2FD /* LaunchUIView.swift */; };
+		0471E4B027FFBADC00E8D2FD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471E4AF27FFBADC00E8D2FD /* ProfileViewController.swift */; };
 		0483842327DC52DE007E68E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483842227DC52DE007E68E4 /* LoginViewController.swift */; };
 		0483842527DC52F9007E68E4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483842427DC52F9007E68E4 /* FeedViewController.swift */; };
 		0483842927DC5B09007E68E4 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0483842827DC5B09007E68E4 /* CameraViewController.swift */; };
@@ -45,6 +46,7 @@
 		042AF0CB27E3D66700784D29 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		0471E4A627FFA85800E8D2FD /* WeeklyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTableViewController.swift; sourceTree = "<group>"; };
 		0471E4AA27FFAF9000E8D2FD /* LaunchUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUIView.swift; sourceTree = "<group>"; };
+		0471E4AF27FFBADC00E8D2FD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0483842227DC52DE007E68E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0483842427DC52F9007E68E4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0483842827DC5B09007E68E4 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				042AF0CB27E3D66700784D29 /* CommentCell.swift */,
 				0471E4A627FFA85800E8D2FD /* WeeklyTableViewController.swift */,
 				0471E4AA27FFAF9000E8D2FD /* LaunchUIView.swift */,
+				0471E4AF27FFBADC00E8D2FD /* ProfileViewController.swift */,
 			);
 			path = SimpleFav;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 			files = (
 				0483842327DC52DE007E68E4 /* LoginViewController.swift in Sources */,
 				0471E4AB27FFAF9000E8D2FD /* LaunchUIView.swift in Sources */,
+				0471E4B027FFBADC00E8D2FD /* ProfileViewController.swift in Sources */,
 				0483842927DC5B09007E68E4 /* CameraViewController.swift in Sources */,
 				0471E4A727FFA85800E8D2FD /* WeeklyTableViewController.swift in Sources */,
 				0487147E27DC343A00036D48 /* AppDelegate.swift in Sources */,

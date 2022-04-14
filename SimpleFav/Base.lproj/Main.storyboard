@@ -86,6 +86,55 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
+        <!--Video View Controller-->
+        <scene sceneID="PbS-RB-JXb">
+            <objects>
+                <viewController id="AgE-mY-5BG" customClass="VideoViewController" customModule="SimpleFav" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="v9n-eL-I6c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYE-pz-4HD">
+                                <rect key="frame" x="186" y="325" width="51" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mle-Y8-H9V">
+                                <rect key="frame" x="56" y="363" width="311" height="204"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="4JT-eu-cyU"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="inh-We-NIo"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="inh-We-NIo" firstAttribute="trailing" secondItem="ZYE-pz-4HD" secondAttribute="trailing" constant="177" id="1MC-B3-hJp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mle-Y8-H9V" secondAttribute="trailing" constant="27" id="8oS-xb-1t1"/>
+                            <constraint firstItem="mle-Y8-H9V" firstAttribute="top" secondItem="ZYE-pz-4HD" secondAttribute="bottom" constant="8" symbolic="YES" id="Axr-z5-EUm"/>
+                            <constraint firstItem="ZYE-pz-4HD" firstAttribute="top" secondItem="inh-We-NIo" secondAttribute="top" constant="269" id="LQj-IM-KVg"/>
+                            <constraint firstItem="ZYE-pz-4HD" firstAttribute="leading" secondItem="inh-We-NIo" secondAttribute="leading" constant="186" id="UzD-ei-Oot"/>
+                            <constraint firstItem="mle-Y8-H9V" firstAttribute="leading" secondItem="v9n-eL-I6c" secondAttribute="leadingMargin" constant="36" id="edf-m3-cJa"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="mle-Y8-H9V" secondAttribute="bottom" constant="20" id="vz3-ft-pGo"/>
+                            <constraint firstItem="inh-We-NIo" firstAttribute="bottom" secondItem="ZYE-pz-4HD" secondAttribute="bottom" constant="519" id="w1U-81-l8k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cnc-yf-wvr"/>
+                    <connections>
+                        <outlet property="videoTitle" destination="ZYE-pz-4HD" id="vSa-bY-5Xr"/>
+                        <outlet property="videoWebView" destination="mle-Y8-H9V" id="wbG-3k-UFq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Pk-tM-daZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="371.01449275362324" y="2564.7321428571427"/>
+        </scene>
         <!--Feed-->
         <scene sceneID="GC1-De-6Ec">
             <objects>
@@ -217,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BJj-2U-Ujv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="19" y="2547"/>
+            <point key="canvasLocation" x="1212" y="2565"/>
         </scene>
         <!--ProfileViewController-->
         <scene sceneID="eeB-7Q-xcW">
@@ -376,7 +425,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="Kcj-f0-Dnc" kind="relationship" relationship="viewControllers" id="rv3-0s-8Sz"/>
-                        <segue destination="gf5-wp-NbV" kind="relationship" relationship="viewControllers" id="Jvz-T8-IDW"/>
+                        <segue destination="QvI-Qp-czP" kind="relationship" relationship="viewControllers" id="Jvz-T8-IDW"/>
                         <segue destination="qjN-e0-yc6" kind="relationship" relationship="viewControllers" id="Mvj-4a-gJ6"/>
                     </connections>
                 </tabBarController>
@@ -387,50 +436,91 @@
         <!--Weekly View-->
         <scene sceneID="eQp-NZ-kS9">
             <objects>
-                <tableViewController storyboardIdentifier="WeeklyTableViewController" id="gf5-wp-NbV" customClass="WeeklyTableViewController" customModule="SimpleFav" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Weekly View" id="gf5-wp-NbV" customClass="WeeklyTableViewController" customModule="SimpleFav" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="LD2-3X-Rce">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="weekCell" rowHeight="96" id="826-mB-Av4">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="96"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="119" id="826-mB-Av4" customClass="VideoTableViewCell" customModule="SimpleFav" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="119"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="826-mB-Av4" id="MeP-8Y-AWg">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TFt-P8-wEn">
-                                            <rect key="frame" x="0.0" y="-16" width="142" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TFt-P8-wEn">
+                                            <rect key="frame" x="5" y="5" width="120" height="109"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="YtR-Kq-ngR"/>
+                                                <constraint firstAttribute="height" constant="120" id="ckN-yl-8PB"/>
+                                            </constraints>
                                         </imageView>
-                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Video name" borderStyle="roundedRect" placeholder="Video name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NH4-vP-cNa">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Video Title" borderStyle="roundedRect" placeholder="Video name" textAlignment="natural" minimumFontSize="17" id="NH4-vP-cNa">
                                             <rect key="frame" x="150" y="11" width="244" height="34"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Notes" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0r3-cH-99s">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Description" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0r3-cH-99s">
                                             <rect key="frame" x="150" y="53" width="244" height="34"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NH4-vP-cNa" firstAttribute="top" secondItem="MeP-8Y-AWg" secondAttribute="topMargin" id="3Nv-RA-zW8"/>
+                                        <constraint firstItem="TFt-P8-wEn" firstAttribute="centerY" secondItem="MeP-8Y-AWg" secondAttribute="centerY" id="9TS-iz-yR0"/>
+                                        <constraint firstItem="TFt-P8-wEn" firstAttribute="leading" secondItem="MeP-8Y-AWg" secondAttribute="leading" constant="5" id="DkB-n3-vxw"/>
+                                        <constraint firstItem="0r3-cH-99s" firstAttribute="top" relation="greaterThanOrEqual" secondItem="NH4-vP-cNa" secondAttribute="bottom" id="GF9-nt-aV0"/>
+                                        <constraint firstItem="NH4-vP-cNa" firstAttribute="leading" secondItem="TFt-P8-wEn" secondAttribute="trailing" constant="25" id="Kxc-dH-yo4"/>
+                                        <constraint firstItem="0r3-cH-99s" firstAttribute="trailing" secondItem="MeP-8Y-AWg" secondAttribute="trailingMargin" id="Mic-vl-Cau"/>
+                                        <constraint firstAttribute="bottom" secondItem="TFt-P8-wEn" secondAttribute="bottom" constant="5" id="NVS-NR-Iqj"/>
+                                        <constraint firstItem="0r3-cH-99s" firstAttribute="leading" secondItem="TFt-P8-wEn" secondAttribute="trailing" constant="25" id="Xgj-fz-EkC"/>
+                                        <constraint firstItem="NH4-vP-cNa" firstAttribute="trailing" secondItem="MeP-8Y-AWg" secondAttribute="trailingMargin" id="g0S-5O-Ac7"/>
+                                        <constraint firstItem="TFt-P8-wEn" firstAttribute="top" secondItem="MeP-8Y-AWg" secondAttribute="top" constant="5" id="s8N-Tr-Xej"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="0r3-cH-99s" secondAttribute="bottom" constant="21" id="xqS-17-JDt"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="videoImageView" destination="TFt-P8-wEn" id="4Qp-0g-Gj8"/>
+                                    <outlet property="videoTitle" destination="NH4-vP-cNa" id="5RT-RX-KTi"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="gf5-wp-NbV" id="t5T-wX-NEk"/>
-                            <outlet property="delegate" destination="gf5-wp-NbV" id="gXu-hx-xsW"/>
+                            <outlet property="dataSource" destination="gf5-wp-NbV" id="sX5-1U-SGL"/>
+                            <outlet property="delegate" destination="gf5-wp-NbV" id="nLA-P0-8AY"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Weekly View" image="calendar" catalog="system" id="7f9-E2-A7V" userLabel="Weekly"/>
+                    <navigationItem key="navigationItem" title="WeeklyView" id="ure-ZW-zOR"/>
+                    <connections>
+                        <segue destination="AgE-mY-5BG" kind="show" identifier="toVideo" id="vVO-0m-onA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmy-Lu-8vg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1451" y="2547"/>
+            <point key="canvasLocation" x="-455.07246376811599" y="2564.7321428571427"/>
+        </scene>
+        <!--Weekly View-->
+        <scene sceneID="5lU-Yj-iXK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QvI-Qp-czP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Weekly View" image="calendar" catalog="system" id="7f9-E2-A7V" userLabel="Weekly"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5mj-FC-Xvr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gf5-wp-NbV" kind="relationship" relationship="rootViewController" id="lJ1-z3-4T3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tz-UL-mtI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1365.217391304348" y="2564.7321428571427"/>
         </scene>
     </scenes>
     <resources>

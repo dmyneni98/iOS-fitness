@@ -1,44 +1,35 @@
 //
-//  ViewController.swift
+//  VideoViewController.swift
 //  SimpleFav
-//  Connect to weekly table view cell
-//  Created by Chris Le on 4/11/22.
+//
+//  Created by Ruben Gonzalez on 4/14/22.
 //
 
 import UIKit
+import WebKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class VideoViewController: UIViewController {
     
-    var videos:[Video] = []
+    var video:Video = Video()
+
+    @IBOutlet weak var videoWebView: WKWebView!
+    @IBOutlet weak var videoTitle: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let video = Video()
-        video.Key = "mS1kiPIWHuE"
-        video.Name = "Quick Full Body Burn || No-Equipment || Nike Training Club"
-        videos.append(video)
+        videoTitle.text = video.Title
+        getVideo(videoKey: video.Key)
+
         // Do any additional setup after loading the view.
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return videos.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WeeklyTableViewCell
+    func getVideo(videoKey:String) {
+        let url = URL(string: "https://www.youtube.com/embed/\(videoKey)")
+        videoWebView.load(URLRequest(url: url!))
         
-        cell.videoName.text = videos[indexPath.row].Name
-        let url = "https://img.youtube.com/vi/\(videos[indexPath.row].Key)/0.jpg"
-        cell.videoImage.downloaded(from: url)
-        
-        return cell
     }
-    
-    class Video{
-        var Key:String = ""
-        var Name:String = ""
-    }
+
     /*
     // MARK: - Navigation
 
@@ -49,26 +40,4 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     */
 
-}
-
-extension UIImageView{
-    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit){
-        contentMode = mode
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard
-                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
-                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
-                let data = data, error == nil,
-                let image = UIImage(data: data)
-            else {return}
-            DispatchQueue.main.async(){
-                self.image = image
-            }
-        }.resume()
-    }
-    
-    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
-        guard let url = URL(string: link) else {return}
-        downloaded(from: url, contentMode: mode)
-    }
 }

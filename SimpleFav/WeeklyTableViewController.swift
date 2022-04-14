@@ -1,87 +1,79 @@
-//
-//  WeeklyTableViewController.swift
+
+//  ViewController.swift
 //  SimpleFav
-//
-//  Created by Dhiraja Myneni on 3/31/22.
+//  Connect to weekly table view cell
+//  Created by Chris Le on 4/11/22.
 //
 
 import UIKit
 
-class WeeklyTableViewController: UITableViewController {
-
+class WeeklyTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var videos:[Video] = []
+    var video:Video = Video()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        let video = Video()
+        video.Key = "mS1kiPIWHuE"
+        video.Title = "Quick Full Body Burn || No-Equipment || Nike Training Club"
+        videos.append(video)
+        
+        let video2 = Video()
+        video.Key = "T8o6ti9tbFA"
+        video.Title = "12 Min Weight Loss HIIT Workout - Weight Loss Challenge 2022"
+        videos.append(video2)
+        
+        let video3 = Video()
+        video.Key = "rnL07TTmikA"
+        video.Title = "THE PERFECT HYBRID LEG WORKOUT (CALISTHENICS & WEIGHTS)"
+        videos.append(video3)
+        
+        let video4 = Video()
+        video.Key = "Lokdk0dla-w"
+        video.Title = "Training Like Batman | Part 1: Strength and Conditioning"
+        videos.append(video4)
+        
+        let video5 = Video()
+        video.Key = "bcv5eBKyz1c"
+        video.Title = "Full Body Calisthenics Workout to Build Muscle "
+        videos.append(video5)
+        // Do any additional setup after loading the view.
     }
     
-    //override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = tableview.dequeueReusableCell(withIdentifier: weekCell, for: indexPath)
-        //return cell
-       // return
-    //}
-
-    // MARK: - Table view data source
-
-   /* override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return videos.count
     }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 7
-    }
-*/
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! VideoTableViewCell
+        
+        cell.videoTitle.text = videos[indexPath.row].Title
+        let url = "https://img.youtube.com/vi/\(videos[indexPath.row].Key)/0.jpg"
+        cell.videoImageView.downloaded(from: url)
+        
         return cell
     }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vi = videos[indexPath.row]
+        self.video = vi
+        
+        performSegue(withIdentifier: "toVideo", sender: nil)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toVideo" {
+            let vc = segue.destination as! VideoViewController
+            vc.video = self.video
         }
     }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
+}
+class Video{
+    var Key:String = ""
+    var Title:String = ""
+}
     /*
     // MARK: - Navigation
 
@@ -92,4 +84,25 @@ class WeeklyTableViewController: UITableViewController {
     }
     */
 
+
+extension UIImageView{
+    func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit){
+        contentMode = mode
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard
+                let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
+                let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
+                let data = data, error == nil,
+                let image = UIImage(data: data)
+            else {return}
+            DispatchQueue.main.async(){
+                self.image = image
+            }
+        }.resume()
+    }
+    
+    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
+        guard let url = URL(string: link) else {return}
+        downloaded(from: url, contentMode: mode)
+    }
 }

@@ -14,11 +14,13 @@ class VideoViewController: UIViewController {
 
     @IBOutlet weak var videoWebView: WKWebView!
     @IBOutlet weak var videoTitle: UILabel!
+    @IBOutlet weak var videoDescription: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         videoTitle.text = video.Title
+        videoDescription.text = video.Description
         getVideo(videoKey: video.Key)
 
         // Do any additional setup after loading the view.

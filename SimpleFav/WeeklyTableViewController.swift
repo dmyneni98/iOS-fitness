@@ -21,23 +21,23 @@ class WeeklyTableViewController: UIViewController, UITableViewDelegate, UITableV
         videos.append(video)
         
         let video2 = Video()
-        video.Key = "T8o6ti9tbFA"
-        video.Title = "12 Min Weight Loss HIIT Workout - Weight Loss Challenge 2022"
+        video2.Key = "mS1kiPIWHuE"
+        video2.Title = "12 Min Weight Loss HIIT Workout - Weight Loss Challenge 2022"
         videos.append(video2)
         
         let video3 = Video()
-        video.Key = "rnL07TTmikA"
-        video.Title = "THE PERFECT HYBRID LEG WORKOUT (CALISTHENICS & WEIGHTS)"
+        video3.Key = "rnL07TTmikA"
+        video3.Title = "THE PERFECT HYBRID LEG WORKOUT (CALISTHENICS & WEIGHTS)"
         videos.append(video3)
         
         let video4 = Video()
-        video.Key = "Lokdk0dla-w"
-        video.Title = "Training Like Batman | Part 1: Strength and Conditioning"
+        video4.Key = "Lokdk0dla-w"
+        video4.Title = "Training Like Batman | Part 1: Strength and Conditioning"
         videos.append(video4)
         
         let video5 = Video()
-        video.Key = "bcv5eBKyz1c"
-        video.Title = "Full Body Calisthenics Workout to Build Muscle "
+        video5.Key = "bcv5eBKyz1c"
+        video5.Title = "Full Body Calisthenics Workout to Build Muscle "
         videos.append(video5)
         // Do any additional setup after loading the view.
     }

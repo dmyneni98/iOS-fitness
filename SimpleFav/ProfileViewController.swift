@@ -9,6 +9,11 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var BDayText: UILabel!
+    
+    @IBOutlet weak var heightText: UITextField!
+    
+    @IBOutlet weak var weightText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
